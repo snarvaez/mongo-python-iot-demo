@@ -7,11 +7,13 @@ import sys, time, datetime
 # ================
 connStr= sys.argv[1]
 dbName= sys.argv[2]     # IOT
-collName= sys.argv[3]   # IOT_DeviceData
+collName= sys.argv[3]   # DeviceData
 
 client= pymongo.MongoClient(connStr, retryWrites=True)
 db= client[dbName]
 coll= db[collName]
+
+print("CONNECTED")
 
 bulk= []
 while 1:
