@@ -1,0 +1,5 @@
+{
+  "deviceId": "$guid",
+  "timestamp": "$date",
+  "temperature": "$integer"
+}

@@ -1,0 +1,5 @@
+{
+  "deviceId": "$guid",
+  "timestamp": "$date",
+  "image": { "$string": { "length": 2097152 }}
+}
