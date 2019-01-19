@@ -31,7 +31,7 @@ while 1:
 for retry in [3, 5, 7, 13, 17]: #exponential back-off & retry
     try:
         result= coll.bulk_write(bulk)
-        print(result)
+        print(result.bulk_api_result)
         break
 
     except Exception as e: #pymongo.errors.BulkWriteError
